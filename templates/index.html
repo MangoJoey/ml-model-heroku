@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+        <h2>Predicted Weight Based on Height</h2>
+    </header>
+
+    <div class = "ml-container">
+        <form action = "{{ url_for('predict')}}" method = "POST">
+        <p>Enter your Height(Inches) here</p>
+        <!-- <input type="number" name="height"/> -->
+        <textarea name="height" rows="4" columns="50"></textarea>
+        <br/>
+
+        <input type="submit" class="btn-info" value="predict">
+
+    </form>
+    </div>
+
+
+</body>
+</html>
